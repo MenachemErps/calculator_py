@@ -12,7 +12,7 @@ def division(num1, num2):
         return "Cannot devide by zero"
     return num1 / num2
 
-def user_math_type():
+def operation_type():
     operation = input("Enter type of math operation \t(1 for addition \n\t\t\t\t 2 for subtraction \n\t\t\t\t 3 for multiplication \n\t\t\t\t 4 for division)\n ")
     if operation in ["1", "2", "3", "4"]:
         return int(operation)
@@ -24,7 +24,7 @@ def operate_calc():
         x_str = input("enter first number: ")
         if x_str == "exit":
             return x_str
-        operator = user_math_type()
+        operator = operation_type()
         y_str = input("enter second number: ")
         x = int(x_str)
         y = int(y_str)
